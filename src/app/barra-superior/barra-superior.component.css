@@ -1,0 +1,42 @@
+.barra-superior {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    background-color: #333;
+    /* height: 50px; */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    height: 50px;
+}
+
+li {
+    display: inline-block;
+    margin: 0 10px;
+    height: 100%;
+    text-align: center;
+    float: left;
+}
+
+#primeiro-item{
+    margin-left: 50px;
+}
+
+a {
+    display: inline;
+    color: #fff;
+    font-family: serif;
+    text-decoration: none;
+    padding: 10px;
+}
+
+li:hover{
+    background-color:#000;
+}
+
+li > div.aba {
+    margin-top: 10px;
+}
