@@ -1,0 +1,15 @@
+td th {
+    padding: 0% 5%;
+    white-space: nowrap;
+    align-content: center;
+}
+
+tr {
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+th {
+    background-color: #222;
+    color: white;
+}

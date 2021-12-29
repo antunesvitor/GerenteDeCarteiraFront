@@ -1,0 +1,27 @@
+<p>ativos</p>
+<div class="row">  
+</div>
+<table>
+    <thead>
+        <th>Cod.</th>
+        <th>Quantidade</th>
+        <th>Cotação atual</th>
+        <th>Posição</th>
+        <th>Preço Médio</th>
+        <th>Rendimento</th>
+        <th>% atual</th>
+        <th>% alvo</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let ativo of ativos">
+            <td><span>{{ativo.codigo}}</span></td>
+            <td><span>{{ativo.quantidade}}</span></td>
+            <td><span>{{ativo.cotacao_atual}}</span></td>
+            <td><span>{{ativo.posicao}}</span></td>
+            <td><span>{{ativo.preco_medio}}</span></td>
+            <td><span>{{ativo.rendimento}}</span></td>
+            <td><span>{{ativo.porcentagem_atual}}</span></td>
+            <td><span>{{ativo.porcentagem_alvo}}</span></td>
+        </tr>
+    </tbody>
+</table>

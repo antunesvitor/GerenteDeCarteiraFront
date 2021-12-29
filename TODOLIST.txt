@@ -1,0 +1,7 @@
+1. criar roteamento
+    1.1 navbar da barra-superior
+    1.2 abas da tela de patrimônio
+
+2. criar scripts para aba ativa 
+    2.1 navbar da barra-superior
+    2.2 abas da tela de patrimônio
