@@ -10,4 +10,8 @@ export class ResponseAtivo {
     porcentagem_alvo!: number;
     posicao!: number;
     quantidade!: number;
+
+    constructor(){
+
+    }
 }

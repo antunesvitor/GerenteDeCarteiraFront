@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { BarraSuperiorComponent } from './barra-superior/barra-superior.component';
 import { GraficoPizzaComponent } from './grafico-pizza/grafico-pizza.component';
 import { AtivosComponent } from './ativos/ativos.component'
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AtivosComponent } from './ativos/ativos.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -8,7 +8,8 @@ import { ResponseAtivo } from "../shared/models/ResponseAtivo.model";
 })
 export class AtivosService {
 
-    apiUrl = 'http://localhost:3000/ativos'
+    apiUrl = 'http://127.0.0.1:3000/ativos'
+    // apiUrl = 'http://127.0.0.1:8000/api/ativos'
 
     httpHeaders = {
         headers: new HttpHeaders({
@@ -20,7 +21,7 @@ export class AtivosService {
         private httpClient: HttpClient
     ) { }
 
-    public getAtivos(): Observable<ResponseAtivo[]>{
+    public getAtivos(): Observable<ResponseAtivo[]> {
         return this.httpClient.get<ResponseAtivo[]>(this.apiUrl)
     }
 }

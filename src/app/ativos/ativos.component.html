@@ -1,7 +1,38 @@
 <p>ativos</p>
-<div class="row">  
+<div class="row">
 </div>
-<table>
+<div class="config-aporte">
+    <label>Aporte</label>
+    <input id="input-aporte" type="number" [(ngModel)]="valorAporte"/>
+
+    <label>No. Máximo de ordens</label>
+    <input id="input-max-ordens" type="number" [(ngModel)]="qtdeMaxOrdem"/>
+
+    <button id="btn-calcular" type="button" (click)="calcular()">Calcular</button>
+
+    <table [style.display]="exibirTabelaAportes ? 'block':'none'">
+        <thead>
+            <tr>
+                <th>Ativo</th>
+                <th>Posicao</th>
+                <th>Quantidade atual</th>
+                <th>Quantidade a ser comprada</th>
+                <th>Nova posição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let aporte of aportes">
+                <td>{{aporte.codigo}}</td>
+                <td>{{aporte.posicao}}</td>
+                <td>{{aporte.quantidade}}</td>
+                <td>{{aporte.qtdeAporte}}</td>
+                <td>{{aporte.novaPosicao}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+<table class="tb-ativos">
     <thead>
         <th>Cod.</th>
         <th>Quantidade</th>
